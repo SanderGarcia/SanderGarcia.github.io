@@ -31,3 +31,17 @@ header ul li:first-of-type span{
     font-weight: 700;
     letter-spacing: -2px;
 }
+
+.mensagem{
+    width: 250px;
+    height: auto;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.mensagem h1{
+    font-weight: 100;
+}
