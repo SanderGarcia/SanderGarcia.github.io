@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="multiup-img/css/all.min.css">
+    <link rel="stylesheet" href="multiup-img/src/css/multiup.img.css">
+    <link rel="stylesheet" href="multiup-img/css/style.css">
+    <title>MULTIUP IMG</title>
+</head>
+<body>
+
+    <header>
+        <h1><span>MULTIUP</span>-IMG</h1>
+    </header>
+
+    <section class="banner">
+        <div class="container">
+            <h2>Plugin desenvolvido por <a href="https://sandergarcia.github.io/" target="_blank">Sander Garcia</a></h2>
+        </div>
+    </section>
+
+    <section class="description">
+        <div class="container">
+            <h1>MULTIUP-IMG</h1>
+            <p>
+                Plugin front-end gratuito para visualização de imagem antes de fazer upload.<br>
+                MULTIUP-IMG é totalmente responsivo e fácil de aplicar em seu projeto.<br><br>
+                Confira abaixo como é prático!
+            </p>
+            <h3>Pré-Requisitos</h3>
+            <p>Como o plugin foi desenvolvido utilizando jQuery, é necessário que você insira-o em seu projeto antes da indicação do MULTIUP-IMG.</p>
+            <div class="code">
+                &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"&gt;&lt;/script&gt;<br>
+                &lt;script src="seu_diretorio/mulitup.img.js"&gt;&lt;/script&gt;
+            </div>
+
+            <p>
+                É necessário indicar também o arquivo CSS no head do seu projeto, além do FontAwesome.<br>
+                Não esqueça de inserir a pasta "webfonts" (FontAwesome) no diretório raiz do seu projeto, pois é utilizado para ícone da imagem.
+            </p>
+            <div class="code">
+                &lt;link rel="stylesheet" href="seu_diretorio/all.min.css"&gt;
+                &lt;link rel="stylesheet" href="seu_diretorio/multiup.img.css"&gt;
+            </div>
+
+            <p>
+                Há duas formas de utilizar o MULTIUP-IMG.<br>
+                Para quando o usuário puder somente fazer upload de <b>uma única</b> imagem ou para quando puder fazer upload de <b>múltiplas</b> imagens.
+            </p>
+        </div>
+    </section>
+
+    <div class="container">
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <h1>Somente Uma Imagem</h1>
+            <div class="master-multiup-content-single">
+                <div class="multiup-single-single">
+                    <label class="multiup-inputfile-single" for="multiplefile0"><i class="fas fa-camera"></i>Selecionar Imagem</label>
+                    <input class="multiplefileinput-single" type="file" id="multiplefile0" name="multiplefile[]" >
+                </div>
+            </div>
+
+            <div class="code">
+                &lt;div class="master-multiup-content-single"&gt;<br>
+                &emsp;&lt;div class="multiup-single-single"&gt;<br>
+                &emsp;&emsp;&lt;label class="multiup-inputfile-single" for="multiplefile0"&gt;&lt;i class="fas fa-camera"&gt;&lt;/i&gt;Selecionar Imagem&lt;/label&gt;<br>
+                &emsp;&emsp;&lt;input class="multiplefileinput-single" type="file" id="multiplefile0" name="multiplefile[]" &gt;<br>
+                &emsp;&lt;/div><br>
+                &lt;/div>
+            </div>
+
+
+            <h1>Múltiplas Imagens</h1>
+            <div class="master-multiup-content">
+                <div class="multiup-single">
+                    <label class="multiup-inputfile" for="multiplefile0"><i class="fas fa-camera"></i>Selecionar Imagem</label>
+                    <input class="multiplefileinput" type="file" id="multiplefile0" name="multiplefile[]" >
+                </div>
+            </div>
+
+            <div class="code">
+                &lt;div class="master-multiup-content"&gt;<br>
+                &emsp;&lt;div class="multiup-single"&gt;<br>
+                &emsp;&emsp;&lt;label class="multiup-inputfile" for="multiplefile0"&gt;&lt;i class="fas fa-camera"&gt;&lt;/i&gt;Selecionar Imagem&lt;/label&gt;<br>
+                &emsp;&emsp;&lt;input class="multiplefileinput" type="file" id="multiplefile0" name="multiplefile[]" &gt;<br>
+                &emsp;&lt;/div><br>
+                &lt;/div>
+            </div>
+
+        </form>
+    </div>
+
+    <section class="description">
+        <div class="container">
+            <h3>Como Desenvolver o Back-End</h3>
+            <p>
+                Como são vários input do tipo file, o envio é normal como qualquer envio de formulário, 
+                necessitando somente de implementar um loop para pegar todas as imagens quando por utilizar 
+                a forma de múltiplas imagens. Caso for utilizar a forma de única imagem, então é somente o input file normal.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Desenvolvido por <a href="https://sandergarcia.github.io/" target="_blank">Sander Garcia</a></p>
+        </div>
+    </footer>
+
+    <script src="multiup-img/js/jquery.js"></script>
+    <script src="multiup-img/src/js/multiup.img.js"></script>
+</body>
+</html>
