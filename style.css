@@ -295,3 +295,49 @@ section.tecnologias .w25{
 }
 
 /***************************************************/
+/* MEDIA SCREEN */
+@media screen and (max-width: 800px){
+    .chamada{
+        width: 90%;
+    }
+
+    .chamada h1{
+        font-size: 30px;
+    }
+    
+    .chamada h2{
+        font-size: 2vw;
+    }
+    
+    .chamada p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 780px){
+    .container-avatar,
+    .founder-description{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px){
+    .chamada h1{
+        font-size: 18px;
+    }
+    
+    .chamada p{
+        font-size: 15px;
+    }
+
+    .ux-chamada{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .chamada{
+        bottom: 10%;
+        transform: translate(-50%,-30%);
+    }
+}
