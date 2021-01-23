@@ -1,0 +1,86 @@
+.master-multiup-content,
+.master-multiup-content-single{
+    width: 100%;
+    min-height: 110px;
+    background-color: #f5f5f5;
+    border: 1px solid #d9d9d9;
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.multiup-single,
+.multiup-single-single{
+    width: 150px;
+    margin: 2.5px 5px 2.5px 2.5px;
+}
+
+.master-multiup-content img,
+.master-multiup-content-single img{
+    width: 100%;
+    height: 100%;
+    min-height: 110px;
+    display: block;
+    border-radius: 5px;
+}
+
+.multiup-img-single,
+.multiup-img-single-single{
+    width: 150px;
+    margin: 0 2.5px;
+    position: relative;
+}
+
+.remove-multiup-img,
+.remove-multiup-img-single{
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #d9d9d9;
+    padding: 5px 8px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+}
+
+.remove-multiup-img:hover,
+.remove-multiup-img-single:hover{
+    background-color: rgba(255, 255, 255, 1);
+    transition: .5s;
+    color: #222;
+    border: 1px solid #222;
+}
+
+.multiup-inputfile,
+.multiup-inputfile-single{
+    border: 1px dashed #999999;
+    background-color: white;
+    font-size: 10px;
+    color: #999;
+    text-align: center;
+    padding: 30px 10px;
+    border-radius: 5px;
+    width: 150px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.multiup-inputfile i,
+.multiup-inputfile-single i{
+    text-align: center;
+    display: block;
+    font-size: 35px;
+    color: #d9d9d9;
+}
+
+.multiplefileinput,
+.multiplefileinput-single{
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
