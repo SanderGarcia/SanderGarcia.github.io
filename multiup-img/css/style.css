@@ -28,6 +28,10 @@ h3{
     padding: 25px 0;
 }
 
+.line-break{
+    display: none;
+}
+
 header{
     width: 100%;
     text-align: center;
@@ -123,4 +127,10 @@ footer a{
 footer a:hover{
     color: white;
     transition: .2s;
+}
+
+@media screen and (max-width: 430px){
+    .line-break{
+        display: block;
+    }
 }
