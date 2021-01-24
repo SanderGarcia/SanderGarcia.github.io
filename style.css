@@ -14,6 +14,8 @@
 .container-flex{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
 .w25{
@@ -63,71 +65,30 @@ header h1 span{
 }
 
 /* BANNER */
-.banner{
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-
-.banner video{
-    width: 100%;
-    display: block;
-    z-index: 0;
-}
-
-.banner-overlay{
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.chamada{
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    z-index: 2;
-}
-
-.chamada h1{
-    font-size: 45px;
+section.banner{
+    padding: 200px 0;
     text-align: center;
+    background-image: linear-gradient(to right bottom, #222, #333);
+}
+
+section.banner h2{
     font-weight: 100;
+    color: #f5f5f5;
 }
 
-.chamada h2{
-    text-align: center;
-    font-size: 2vw;
-    font-weight: 700;
-    padding: 15px 0;
-}
-
-.chamada p{
-    font-size: 20px;
-    text-align: center;
-    font-weight: 100;
-}
-
-.ux-chamada{
-    position: absolute;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-    z-index: 2;
-    text-align: center;
-}
-
-.ux-chamada a{
-    color: white;
-    display: block;
-    text-align: center;
+section.banner h2 a{
+    color: #1e88e5;
     text-decoration: none;
-    font-weight: 300;
+}
+
+section.banner h2 a:hover{
+    color: #42a5f5;
+    transition: .2s;
+}
+
+section.banner p{
+    color: #f5f5f5;
+    font-weight: 100;
 }
 
 /***************************************************/
@@ -363,7 +324,8 @@ section.portfolio{
 
 @media screen and (max-width: 780px){
     .container-avatar,
-    .founder-description{
+    .founder-description,
+    .portfolio-single{
         width: 100%;
     }
 }
