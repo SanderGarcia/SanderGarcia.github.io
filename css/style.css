@@ -346,7 +346,8 @@ footer p{
 @media screen and (max-width: 780px){
     .container-avatar,
     .founder-description,
-    .portfolio-single{
+    .w50,
+    a.card-portfolio{
         width: 100%;
     }
 }
