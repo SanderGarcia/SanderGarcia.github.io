@@ -1,0 +1,293 @@
+/**
+* Name: Bootstrap AGINTEST
+* Destination: Software
+* Autor: Agintest
+* Version: 1.0
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{padding: 0; box-sizing: border-box; font-family: 'Roboto';outline: 0;}
+
+.container{width: 100%; margin: 0 auto; padding: 0 2%;}
+.container-flex{display: flex; flex-wrap: nowrap;}
+
+.row{display: flex; flex-wrap: wrap; width: 100%;}
+
+.col-12{width: 100%;}
+.col-11{width: 91.66666667%;}
+.col-10{width: 83.33333333%;}
+.col-9{width: 75%;}
+.col-8{width: 66.666666675%;}
+.col-7{width: 58.33333333%;}
+.col-6{width: 50%;}
+.col-5{width: 41.66666667%;}
+.col-4{width: 33.33333333%;}
+.col-3{width: 25%;}
+.col-2{width: 16.66666667%;}
+.col-1{width: 8.333333333%;}
+
+.bg-primary{background-color: #333f50;}
+.bg-secondary{background-color: #62758f;}
+.bg-dark{background-color: #222222;}
+.bg-light{background-color: #f5f5f5;}
+.bg-white{background-color: #ffffff;}
+.bg-warning{background-color: #fb8c00;}
+.bg-success{background-color: #2e7d32;}
+.bg-danger{background-color: #b71c1c;}
+.bg-disabled{background-color: #d9d9d9;}
+.bg-black{background-color: black;}
+
+.text-primary{color: #333f50;}
+.text-secundary{color: #62758f;}
+.text-dark{color: #222222;}
+.text-light{color: #f5f5f5;}
+.text-white{color: #ffffff;}
+.text-black{color: #000000;}
+.text-warning{color: #fb8c00;}
+.text-success{color: #2e7d32;}
+.text-danger{color: #b71c1c;}
+.text-disabled{color: #d9d9d9;}
+
+.btn{border: 0;padding: 8px 10px;border-radius: 3px;cursor: pointer;font-size: 13px;font-weight: 500;margin: 0;text-decoration: none;display: inline-block;outline: 0;}
+.btn:hover{opacity: .9;}
+.btn-plus{text-decoration: none;padding: 8px 10px 0 10px;display: inline-block;}
+.btn-plus:hover{opacity: .9;}
+.btn-order{padding: 0 5px; color: #333f50}
+button{cursor: pointer;}
+
+.tabs{
+    border: 1px solid #d9d9d9;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 8px 10px;
+    margin-right: 0;
+    background-color: #f5f5f5;
+    color: #333f50;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.tabs.actived{
+    background-color: #62758f;
+    color: #f5f5f5;
+}
+
+.h1,.h2,.h3,.h4,.h5{font-weight: 300;color: #666;padding: 0 10px;border-bottom: 1px solid #666;}
+
+/* Paddings */
+.p-1{padding: 10px;}
+.p-2{padding: 20px;}
+.p-3{padding: 30px;}
+.p-4{padding: 40px;}
+.p-5{padding: 50px;}
+
+.pt-1{padding-top: 10px;}
+.pt-2{padding-top: 20px;}
+.pt-3{padding-top: 30px;}
+.pt-4{padding-top: 40px;}
+.pt-5{padding-top: 50px;}
+
+.pr-1{padding-right: 10px;}
+.pr-2{padding-right: 20px;}
+.pr-3{padding-right: 30px;}
+.pr-4{padding-right: 40px;}
+.pr-5{padding-right: 50px;}
+
+.pb-1{padding-bottom: 10px;}
+.pb-2{padding-bottom: 20px;}
+.pb-3{padding-bottom: 30px;}
+.pb-4{padding-bottom: 40px;}
+.pb-5{padding-bottom: 50px;}
+
+.pl-1{padding-left: 10px;}
+.pl-2{padding-left: 20px;}
+.pl-3{padding-left: 30px;}
+.pl-4{padding-left: 40px;}
+.pl-5{padding-left: 50px;}
+
+.py-1{padding-block-start: 10px; padding-block-end: 10px;}
+.py-2{padding-block-start: 20px; padding-block-end: 20px;}
+.py-3{padding-block-start: 30px; padding-block-end: 30px;}
+.py-4{padding-block-start: 40px; padding-block-end: 40px;}
+.py-5{padding-block-start: 50px; padding-block-end: 50px;}
+
+.px-1{padding-inline-start: 10px; padding-inline-end: 10px;}
+.px-2{padding-inline-start: 20px; padding-inline-end: 20px;}
+.px-3{padding-inline-start: 30px; padding-inline-end: 30px;}
+.px-4{padding-inline-start: 40px; padding-inline-end: 40px;}
+.px-5{padding-inline-start: 50px; padding-inline-end: 50px;}
+
+/* Margins */
+.m-1{margin: 10px;}
+.m-2{margin: 20px;}
+.m-3{margin: 30px;}
+.m-4{margin: 40px;}
+.m-5{margin: 50px;}
+
+.mt-1{margin-top: 10px;}
+.mt-2{margin-top: 20px;}
+.mt-3{margin-top: 30px;}
+.mt-4{margin-top: 40px;}
+.mt-5{margin-top: 50px;}
+
+.mr-1{margin-right: 10px;}
+.mr-2{margin-right: 20px;}
+.mr-3{margin-right: 30px;}
+.mr-4{margin-right: 40px;}
+.mr-5{margin-right: 50px;}
+
+.mb-1{margin-bottom: 10px;}
+.mb-2{margin-bottom: 20px;}
+.mb-3{margin-bottom: 30px;}
+.mb-4{margin-bottom: 40px;}
+.mb-5{margin-bottom: 50px;}
+
+.ml-1{margin-left: 10px;}
+.ml-2{margin-left: 20px;}
+.ml-3{margin-left: 30px;}
+.ml-4{margin-left: 40px;}
+.ml-5{margin-left: 50px;}
+
+.my-1{margin-block-start: 10px; margin-block-end: 10px;}
+.my-2{margin-block-start: 20px; margin-block-end: 20px;}
+.my-3{margin-block-start: 30px; margin-block-end: 30px;}
+.my-4{margin-block-start: 40px; margin-block-end: 40px;}
+.my-5{margin-block-start: 50px; margin-block-end: 50px;}
+.my-auto{margin: auto 0;}
+
+.mx-1{margin-inline-start: 10px; margin-inline-end: 10px;}
+.mx-2{margin-inline-start: 10px; margin-inline-end: 10px;}
+.mx-3{margin-inline-start: 10px; margin-inline-end: 10px;}
+.mx-4{margin-inline-start: 10px; margin-inline-end: 10px;}
+.mx-5{margin-inline-start: 10px; margin-inline-end: 10px;}
+.mx-auto{margin: 0 auto;}
+
+/* Text */
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+.text-justify{text-align: justify;}
+
+/* Positions */
+.position-relative{position: relative;}
+.position-absolute{position: absolute;}
+.transform-center{top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.transform-vertical{top: 50%; transform: translateY(-50%);}
+.transform-horizontal{left: 50%; transform: translateY(-50%);}
+
+/* Forms */
+.form-group{margin-top: 15px; margin-bottom: 15px; padding-right: 10px;}
+.row .form-group:last-of-type{padding-right: 0;}
+.form-group .input,.form-group .textarea{width: 100%;padding: 8px;background-color: transparent;border: 0;border-bottom: 1px solid #888888;font-size: 14px}
+.form-group .input::placeholder,.form-group .textarea::placeholder{font-weight: 300;font-style: italic;color: transparent;}
+.form-group .input:focus::placeholder,.form-group .textarea:focus::placeholder{padding-bottom: 5px;color: #666;}
+.form-group .textarea{resize: vertical; min-height: 80px;}
+.form-group .label{font-size: 15px; color: #444; padding: 5px; float: left; height: 25px; line-height: 15px; display: block; width: 100%; padding-left: 8px; line-height: 50px; cursor: text;}
+.form-group .label-quill{font-size: 15px; color: #444; padding: 5px; padding-left: 8px;}
+input[type=checkbox]{cursor: pointer;}
+.form-group .str-length{display: block;background-color: white;font-size: 12px;text-align: right;color: #444;}
+
+/* Tables */
+.responsive-table{overflow-x: auto;}
+.table{width: 100%; border-collapse: collapse; overflow-x: auto;}
+.table td, .table th{border-bottom: 1px solid #ddd; padding: 8px;}
+.table thead th{font-weight: 300;}
+.table tr:nth-child(even){background-color: #f2f2f2;}
+.table tbody tr:hover{background-color: #ddd;}
+
+/* Circle box */
+.circle{border-radius: 50%;}
+
+/* Shadows */
+.shadow-sm{box-shadow: 0 .125rem .25rem rgba(0,0,0,.075)!important;}
+.shadow-md{box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;}
+.shadow-lg{box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;}
+
+/* Fazer dialog */
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.overlay .dialog{
+    width: 98%;
+    max-width: 350px;
+    height: auto;
+    background-color: white;
+    padding: 15px 15px 0 15px;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.overlay .dialog h3{
+    border-bottom: 1px solid #d9d9d9;
+    margin-bottom: 5px;
+    color: #333f50;
+    padding-bottom: 5px;
+    font-size: 15px;
+}
+
+.overlay .dialog p{
+    font-size: 15px;
+    color: #444;
+}
+
+.overlay .create-modal{
+    width: 90%;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    padding: 15px;
+}
+
+/* Box Image */
+.box-image{
+    width: 200px;
+    height: 120px;
+    border: 1px solid #d9d9d9;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.box-image img{
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.box-image-multiple{
+    width: 100%;
+    height: auto;
+    border: 1px solid #d9d9d9;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 5px 5px 0 5px;
+}
+
+.box-image-multiple img{
+    width: 100%;
+    max-width: 200px;
+    height: 100%;
+    max-height: 120px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Fazer Borders */
