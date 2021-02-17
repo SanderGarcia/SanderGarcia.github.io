@@ -72,9 +72,9 @@ header h1 span{
 
 /* BANNER */
 section.banner{
-    padding: 100px 0;
+    padding: 20px 0;
     text-align: center;
-    background-image: linear-gradient(to right bottom, #222, #333);
+    /* background-image: linear-gradient(to right bottom, #222, #333); */
 }
 
 section.banner h2{
