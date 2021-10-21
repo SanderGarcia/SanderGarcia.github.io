@@ -1,0 +1,99 @@
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  transition: 1s;
+  padding: 16px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--light-light);
+  font-weight: 100;
+  font-size: 95px;
+  transition: 1s;
+}
+
+header a:hover {
+  color: var(--enfase-light);
+}
+
+header a b {
+  font-weight: 400;
+}
+
+header.active {
+  background-color: rgba(37, 34, 33, 0.8);
+}
+
+header.active a {
+  font-size: 25px;
+}
+
+header .menu-btn {
+  display: inline-block;
+  color: var(--light-light);
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  position: relative;
+  transition: 0.5s;
+  margin-right: 45px;
+}
+
+header .menu-btn:hover {
+  color: var(--enfase-light);
+}
+
+header .menu-btn::after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  margin-left: 8px;
+  width: 30px;
+  height: 4px;
+  border-radius: 5px;
+  background-color: var(--light-light);
+  box-shadow: 0 4px 0 transparent, 10px 10px 0 var(--light-light);
+  transition: 0.5s;
+}
+
+header .menu-btn:hover::after {
+  margin-left: 16px;
+  background-color: var(--enfase-light);
+  box-shadow: 0 4px 0 transparent, -10px 10px 0 var(--enfase-light);
+}
+
+@media screen and (max-width: 890px) {
+  header a {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  header.active a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header a {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header a {
+    font-size: 18px;
+  }
+}
