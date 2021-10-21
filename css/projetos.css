@@ -1,0 +1,110 @@
+.projetos {
+  background-color: white;
+}
+
+.projetos h2 {
+  font-family: 'Paprika', cursive;
+  font-size: 48px;
+  text-align: right;
+  padding: 0 16px 64px 16px;
+}
+
+.projetos-content {
+  background-color: var(--dark-dark);
+  width: 100%;
+}
+
+.binary-box {
+  width: 100%;
+  display: inline-block;
+  text-align: right;
+  margin-top: -128px;
+}
+
+.binary-projetos {
+  display: inline-block;
+}
+
+.design-section {
+  width: 100%;
+  background-color: var(--dark-dark);
+  height: 200px;
+  border-top-left-radius: 100%;
+  border-top: 16px solid var(--enfase);
+}
+
+.projeto-single {
+  width: 50%;
+  padding: 32px;
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.projeto-single img {
+  width: 100%;
+}
+
+.projeto-single::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 200px;
+  left: 0px;
+  top: 0px;
+  background-color: var(--enfase);
+  border-radius: 5px;
+}
+
+.projeto-single h3 {
+  color: var(--enfase-light);
+  font-size: 32px;
+  padding-top: 8px;
+}
+
+.projeto-single p {
+  font-size: 12px;
+  color: var(--dark-light);
+}
+
+@media screen and (max-width: 860px) {
+  .projeto-single h3 {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .projeto {
+    padding: 128px 16px;
+  }
+
+  .projeto-single {
+    width: 100%;
+    padding: 16px 0;
+  }
+
+  .projeto-single::before {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .projetos h2 {
+    font-size: 36px;
+    text-align: center;
+    padding: 0 16px 16px 16px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .binary-box {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .projeto-single h3 {
+    font-size: 16px;
+  }
+}
