@@ -668,4 +668,8 @@ header button img {
     left: 0;
     margin: 1rem;
   }
+
+  .content .quantitativo table span {
+    display: block;
+  }
 }
