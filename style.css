@@ -647,7 +647,7 @@ header button img {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
   .content .banner h1 {
     width: 100%;
     font-size: 25px;
