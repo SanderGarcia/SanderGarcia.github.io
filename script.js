@@ -21,3 +21,15 @@ function ativaSidebar() {
   })
 }
 ativaSidebar();
+
+function tamanhoPagina() {
+  const sidebar = document.getElementsByClassName('sidebar');
+  const width = window.innerWidth;
+  console.log(width);
+  if (width <= 950) {
+    sidebar[0].classList.remove('active');
+  } else {
+    sidebar[0].classList.add('active');
+  }
+}
+tamanhoPagina();
