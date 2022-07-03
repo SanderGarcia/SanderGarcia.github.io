@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <title>Sander Garcia</title>
 </head>
-<body>
+<body onload="carregar()">
   
   <div class="container">
     <header>
@@ -70,7 +70,7 @@
         </div><!--codificacao-->
 
         <!--<div class="download">
-          <a href="">DOWNLOAD CURRÍCULO <img src="./assets/Download.svg" alt="Ícone de Donwload"></a>
+          <a target="_blank" href="./Sander-Garcia-Curriculo.pdf">DOWNLOAD CURRÍCULO <img src="./assets/Download.svg" alt="Ícone de Donwload"></a>
         </div>--><!--download-->
 
         <div class="sidebar-footer">
@@ -335,6 +335,11 @@
 
     </div><!--container-flex-->
   </div><!--container-->
+
+  <div id="load" class="overlay">
+    <small>Sander Garcia</small>
+    <div class="loader"></div>
+  </div>
   
   <script src="script.js"></script>
 </body>

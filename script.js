@@ -1,3 +1,8 @@
+function carregar() {
+  const load = document.getElementById('load');
+  load.style.display = 'none';
+}
+
 function abreFechaMenu() {
   const menu = document.getElementById('menu');
   const sidebar = document.getElementsByClassName('sidebar');
@@ -25,7 +30,6 @@ ativaSidebar();
 function tamanhoPagina() {
   const sidebar = document.getElementsByClassName('sidebar');
   const width = window.innerWidth;
-  console.log(width);
   if (width <= 950) {
     sidebar[0].classList.remove('active');
   } else {
