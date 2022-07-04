@@ -42,7 +42,7 @@
 
 body {
   background-image: linear-gradient(to right bottom, var(--black1), var(--black2));
-  color: var(--white3);
+  color: var(--white2);
   min-height: 100vh;
   padding: 1rem;
 }
@@ -375,6 +375,10 @@ header button img {
   padding: .5rem 0;
 }
 
+.content .sobre a {
+  color: var(--orange1);
+}
+
 .content .formacao {
   padding: 2rem 0 1.5rem 0;
   border-bottom: 1px solid var(--black3);
@@ -470,6 +474,7 @@ header button img {
 
 .content .capacitacao {
   padding: 0 0 1.5rem 0;
+  border-bottom: 1px solid var(--black3);
 }
 
 .content .capacitacao .container-flex {
@@ -500,6 +505,52 @@ header button img {
   font-style: italic;
   padding: 5px .5rem;
   display: inline-block;
+}
+
+.content .livro {
+  padding: 2rem 0 1.5rem 0;
+}
+
+.content .livro .container-flex .capa {
+  max-width: 183px;
+}
+
+.content .livro .container-flex .capa img {
+  width: 100%;
+}
+
+.content .livro .container-flex .descricao {
+  width: calc(100% - 183px);
+  padding: 0 1rem;
+}
+
+.content .livro .container-flex .descricao h2 {
+  font-size: 24px;
+  padding-bottom: .5rem;
+}
+
+.content .livro .container-flex .descricao p {
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.content .livro .container-flex .descricao a {
+  width: 200px;
+  display: inline-block;
+  background-color: var(--orange1);
+  color: var(--white3);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.content .livro .container-flex .descricao a:hover {
+  opacity: .7;
 }
 
 /**************************************/
@@ -644,6 +695,15 @@ header button img {
 
   .content .banner .foto {
     display: none;
+  }
+
+  .content .livro .container-flex .capa {
+    width: 100%;
+  }
+  
+  .content .livro .container-flex .descricao {
+    width: 100%;
+    padding: 1rem 0;
   }
 }
 
