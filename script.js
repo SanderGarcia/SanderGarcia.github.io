@@ -57,4 +57,4 @@ function idade(ano_aniversario, mes_aniversario, dia_aniversario) {
   const idade = quantos_anos < 0 ? 0 : quantos_anos;
   campo.innerText = idade;
 }
-idade(1986, 10, 30);
+idade(1986, 11, 30);
