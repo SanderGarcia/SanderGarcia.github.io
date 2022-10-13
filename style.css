@@ -414,12 +414,19 @@ header button img {
   display: inline-block;
 }
 
-.content .experiencia {
+.content .experiencia,
+.content .projetos {
   margin: 2rem 0;
   border-bottom: 1px solid var(--black3);
 }
 
-.content .experiencia .experiencia-item {
+.content .projetos {
+  border-top: 1px solid var(--black3);
+  padding-top: 2rem;
+}
+
+.content .experiencia .experiencia-item,
+  .content .projetos .projeto-item {
   width: calc(50% - 1rem);
   margin-bottom: 2rem;
   background-color: rgba(255, 255, 255, 5%);
@@ -428,27 +435,32 @@ header button img {
   padding: 1rem;
 }
 
-.content .experiencia .experiencia-item.left {
+.content .experiencia .experiencia-item.left,
+.content .projetos .projeto-item.left {
   margin-right: 1rem;
 }
 
-.content .experiencia .experiencia-item.right {
+.content .experiencia .experiencia-item.right,
+.content .projetos .projeto-item.right {
   margin-left: 1rem;
 }
 
-.content .experiencia .experiencia-item h3 {
+.content .experiencia .experiencia-item h3,
+.content .projetos .projeto-item h3 {
   font-size: 24px;
   font-weight: 700;
 }
 
-.content .experiencia .experiencia-item i {
+.content .experiencia .experiencia-item i,
+.content .projetos .projeto-item i {
   font-size: 12px;
   display: block;
   font-weight: 300;
   padding: 3px 0;
 }
 
-.content .experiencia .experiencia-item span {
+.content .experiencia .experiencia-item span,
+.content .projetos .projeto-item span {
   display: inline-block;
   font-size: 12px;
   font-weight: 400;
@@ -468,8 +480,34 @@ header button img {
   line-height: 25px;
 }
 
-.content .experiencia .container-flex:last-of-type {
+.content .experiencia .container-flex:last-of-type,
+.content .projetos .container-flex:last-of-type {
   margin-bottom: 1rem;
+}
+
+.content .projetos .projeto-item p {
+  color: var(--black4);
+  font-size: 12px;
+  padding-top: 1rem;
+}
+
+.content .projetos .projeto-item a {
+  width: 200px;
+  display: inline-block;
+  background-color: var(--orange1);
+  color: var(--white3);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.content .projetos .projeto-item a:hover {
+  opacity: .7;
 }
 
 .content .capacitacao {
