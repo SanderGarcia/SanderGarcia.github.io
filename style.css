@@ -491,8 +491,14 @@ header button img {
   padding-top: 1rem;
 }
 
+.content .projetos .projeto-item .container-flex {
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
 .content .projetos .projeto-item a {
-  width: 200px;
+  width: calc(50% - 1rem);
   display: inline-block;
   background-color: var(--orange1);
   color: var(--white3);
