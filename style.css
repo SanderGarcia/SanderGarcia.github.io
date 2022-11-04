@@ -425,8 +425,12 @@ header button img {
   padding-top: 2rem;
 }
 
+.content .projetos .container-flex {
+  justify-content: center;
+}
+
 .content .experiencia .experiencia-item,
-  .content .projetos .projeto-item {
+.content .projetos .projeto-item {
   width: calc(50% - 1rem);
   margin-bottom: 2rem;
   background-color: rgba(255, 255, 255, 5%);
@@ -434,6 +438,10 @@ header button img {
   border-radius: 5px;
   padding: 1rem;
 }
+
+/* .content .projetos .projeto-item {
+  padding-bottom: 0;
+} */
 
 .content .experiencia .experiencia-item.left,
 .content .projetos .projeto-item.left {
@@ -456,7 +464,7 @@ header button img {
   font-size: 12px;
   display: block;
   font-weight: 300;
-  padding: 3px 0;
+  padding: .5rem 0;
 }
 
 .content .experiencia .experiencia-item span,
@@ -514,6 +522,18 @@ header button img {
 
 .content .projetos .projeto-item a:hover {
   opacity: .7;
+}
+
+.content .projetos .projeto-item .imagem-projeto {
+  width: 100%;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.content .projetos .projeto-item .imagem-projeto img {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
 }
 
 .content .capacitacao {
