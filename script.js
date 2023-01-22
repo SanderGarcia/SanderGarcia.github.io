@@ -58,3 +58,24 @@ function idade(ano_aniversario, mes_aniversario, dia_aniversario) {
   campo.innerText = idade;
 }
 idade(1986, 11, 30);
+
+// Dark Light
+function darkLight() {
+  const btn = document.querySelector('.dark-light');
+  const body = document.querySelector('body');
+
+  function handleClick() {
+    if (Array.from(body.classList).includes('light')) {
+      body.classList.remove('light');
+      btn.classList.remove('close');
+      btn.classList.add('active');
+    } else {
+      body.classList.add('light');
+      btn.classList.remove('active');
+      btn.classList.add('close');
+    }
+  }
+
+  btn.addEventListener('click', handleClick);
+}
+darkLight();

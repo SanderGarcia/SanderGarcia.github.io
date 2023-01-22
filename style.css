@@ -31,6 +31,7 @@
 ::-webkit-scrollbar-thumb:hover {
   background: var(--black2); 
 }
+
 /********************************/
 
 * {
@@ -45,6 +46,12 @@ body {
   color: var(--white2);
   min-height: 100vh;
   padding: 1rem;
+  transition: 3s;
+}
+
+body.light {
+  background-image: linear-gradient(to right bottom, var(--white1), white);
+  color: var(--black2);
 }
 
 .container {
@@ -88,6 +95,16 @@ h2.title {
   animation: spin 2s linear infinite;
   position: fixed;
   z-index: 9999;
+}
+
+.light .overlay {
+  background-image: linear-gradient(to right bottom, var(--white1), white);
+  color: var(--black2);
+}
+
+.light .loader {
+  border: 5px solid white;
+  border-top: 5px solid var(--orange1);
 }
 
 /* Safari */
@@ -139,6 +156,10 @@ header button img {
   display: none;
 }
 
+.light .sidebar {
+  background-color: var(--white2);
+}
+
 .sidebar.active {
   display: block;
 }
@@ -147,6 +168,44 @@ header button img {
   text-align: center;
   padding: 2rem 0;
   background-color: rgba(255, 255, 255, 3%);
+  position: relative;
+}
+
+.dark-light {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 0;
+  background-color: transparent;
+  font-size: 35px;
+  cursor: pointer;
+  color: var(--white1);
+  transition: .5s;
+  border-radius: 50%;
+}
+
+.dark-light.active {
+  animation: rotate .5s forwards;
+}
+
+.dark-light.close {
+  animation: voltar .5s forwards;
+}
+
+@keyframes rotate {
+  100% {transform: rotate(360deg);}
+}
+
+@keyframes voltar {
+  100% {transform: rotate(-360deg);}
+}
+
+.light .dark-light {
+  color: var(--black3);
+}
+
+.light .sidebar .avatar {
+  background-color: rgba(0, 0, 0, 3%);
 }
 
 .sidebar .avatar img {
@@ -256,6 +315,10 @@ header button img {
   text-align: center;
 }
 
+.light .sidebar-footer {
+  background-color: var(--black3);
+}
+
 .sidebar .sidebar-footer a {
   display: inline-block;
   margin: 0 10px;
@@ -293,6 +356,10 @@ header button img {
   font-size: 36;
   line-height: 50px;
   letter-spacing: 3px;
+}
+
+.light .content .banner h1 {
+  color: var(--white2);
 }
 
 .content .banner .foto {
@@ -437,6 +504,11 @@ header button img {
   border-bottom: 7px solid var(--orange1);
   border-radius: 5px;
   padding: 1rem;
+}
+
+.light .content .experiencia .experiencia-item,
+.light .content .projetos .projeto-item {
+  background-color: rgba(0, 0, 0, 5%);
 }
 
 /* .content .projetos .projeto-item {
