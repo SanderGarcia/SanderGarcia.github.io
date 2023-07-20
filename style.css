@@ -129,6 +129,8 @@ header {
   top: 0;
   left: 0;
   z-index: 1;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header button {
@@ -143,6 +145,16 @@ header button:hover {
 
 header button img {
   display: block;
+}
+
+header .logo {
+  text-decoration: none;
+  color: var(--white1);
+}
+
+header .logo img {
+  width: 40px;
+  display: inline-block;
 }
 
 /****************************************/
@@ -752,7 +764,7 @@ header button img {
 
 @media screen and (max-width: 950px) {
   header {
-    display: block;
+    display: flex;
   }
 
   .sidebar {
