@@ -5,7 +5,7 @@
   --black2: #252221;
   --black3: #3E3938;
   --black4: #858585;
-  --orange1: #F5581A;
+  --orange1: #1a54f5;
   --white1: #B9B9B9;
   --white2: #DFDFDF;
   --white3: #F2F2F2;
@@ -19,7 +19,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--black1); 
+  background: var(--white1); 
 }
  
 /* Handle */
@@ -349,7 +349,7 @@ header .logo img {
 .content .banner {
   position: relative;
   width: 100%;
-  background-image: url('./assets/Banner.jpg');
+  background-image: url('./assets/Banner2.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -698,6 +698,54 @@ header .logo img {
 }
 
 .content .livro .container-flex .descricao a:hover {
+  opacity: .7;
+}
+
+/************************************/
+.content .curso {
+  padding: 2rem 0 1.5rem 0;
+  border-bottom: 1px solid var(--black3);
+}
+
+.content .curso .container-flex .capa {
+  max-width: 300px;
+}
+
+.content .curso .container-flex .capa img {
+  width: 100%;
+}
+
+.content .curso .container-flex .descricao {
+  width: calc(100% - 300px);
+  padding: 0 1rem;
+}
+
+.content .curso .container-flex .descricao h2 {
+  font-size: 24px;
+  padding-bottom: .5rem;
+}
+
+.content .curso .container-flex .descricao p {
+  font-size: 15px;
+  padding: 5px 0;
+}
+
+.content .curso .container-flex .descricao a {
+  width: 200px;
+  display: inline-block;
+  background-color: var(--orange1);
+  color: var(--white3);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.content .curso .container-flex .descricao a:hover {
   opacity: .7;
 }
 
