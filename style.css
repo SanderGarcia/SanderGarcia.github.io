@@ -883,6 +883,15 @@ header .logo img {
   .content .projetos .projeto-item.right {
     margin-left: 0;
   }
+
+  .content .curso .container-flex .capa {
+    width: 100%;
+  }
+  
+  .content .curso .container-flex .descricao {
+    width: 100%;
+    padding: 1rem 0;
+  }
 }
 
 @media screen and (max-width: 550px) {
